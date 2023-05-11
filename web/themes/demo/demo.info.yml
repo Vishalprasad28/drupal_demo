@@ -1,0 +1,23 @@
+name: demo
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - demo/base
+  - demo/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - demo/user
+  core/drupal.dropbutton:
+    - demo/dropbutton
+  core/drupal.dialog:
+    - demo/dialog
+  file/drupal.file:
+    - demo/file
+  core/drupal.progress:
+    - demo/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.8'
+screenshot: life_fact.png
